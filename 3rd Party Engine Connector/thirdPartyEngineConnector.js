@@ -1,6 +1,22 @@
 //Author: Fady Heiba
 //Date of release: June 1st, 2016
 
+/*A general overview of how the code works (refer to the comments in the code for more details):
+- paint function starts.
+- Go through each data row in the last datapage (in this case 1000 rows each or the remaining rows) loaded and fetch the dimensions and measures to our final data array.
+- If we're done retrieving all the rows, send all the data to Matlab, then render the visualization.
+- If there are still rows remaining we haven't pulled, request another page of data, either 1000 rows or if the remaining rows.
+- Recursive paint function (back to top).*/
+
+//To Configure New Third Party Engine Functions:
+/*New third party engine JavaScript functions will have to receive Qlik's dimension and measure inputs as an array of objects with properties such as Dim0, Dim1, etc and Meas0, Meas1, etc and also output as an array of objects if it will be visualizing using the D3 charts.
+
+Please don't hesitate to email me at fady.heiba@qlik.com for help with new functions.*/
+
+
+
+
+
 //Connecting all files we'll be using
 define(["jquery", 
         "text!./thirdPartyEngineConnector.css",
@@ -124,7 +140,7 @@ define(["jquery",
                                     label : "MPS API URL",
                                     type : "string",
                                     expression: "optional",
-                                    defaultValue: "http://ec2-52-38-254-185.us-west-2.compute.amazonaws.com:31415"
+                                    defaultValue: ""
                                 }
                             }
                         },
@@ -201,12 +217,6 @@ define(["jquery",
         paint : function($element, layout, lastrow, data, dataPageLimit, noOfDim, noOfMeas) {
             //Hardcoding a limitation of 10K rows for now to prevent accidents that overload memory
             if(this.backendApi.getRowCount()<10000){
-                /*Order of Execution:
-                - paint function starts.
-                - Go through each data row in the last datapage (in this case 1000 rows each or the remaining rows) loaded and fetch the dimensions and measures to our final data array.
-                - If we're done retrieving all the rows, send all the data to Matlab, then render the visualization.
-                - If there are still rows remaining we haven't pulled, request another page of data, either 1000 rows or if the remaining rows.
-                - Recursive paint function (back to top).*/
 
                 var self = this;
                 //Initialize variables used in recursion
