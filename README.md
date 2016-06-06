@@ -20,7 +20,10 @@ In this Qlik Sense app, the Fund Manager can select a historical period that he 
 The next example uses a Predictive Analytics function in R, the ARIMA Forecast, to predict what the next month's sales will look like based on the past three years.
 ![alt tag](https://github.com/fadyheiba/Sense-Third-Party-Engine-Connector/blob/master/3rd%20Party%20Engine%20Connector/R%20Example.png)
 
+####For Developers:
+If you're interested in configuring new functions, please refer to the instruction comments at the top of the javascript file.
+Please don't hesitate to email me at fady.heiba@qlik.com for help with new functions.
 
-
+####Credit:
 - Original ARIMA Forecast extension by Jeffrey Koch
 - Special thanks to Arvind Hosagrahara from Matlab.
