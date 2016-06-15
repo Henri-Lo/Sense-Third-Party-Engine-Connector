@@ -22,7 +22,6 @@ The next example uses a Predictive Analytics function in R, the ARIMA Forecast, 
 
 ####For Developers:
 If you're interested in configuring new functions, please refer to the instruction comments at the top of the javascript file.
-Please don't hesitate to email me at fady.heiba@qlik.com for help with new functions.
 
 ####Credit:
 - Original ARIMA Forecast extension by Jeffrey Koch
