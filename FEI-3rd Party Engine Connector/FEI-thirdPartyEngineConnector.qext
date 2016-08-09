@@ -1,0 +1,9 @@
+{
+	"name" : "3rd Party Engine Connector",
+	"description" : "Connects the Qlik Sense Engine to 3rd party engines and their functions, currently programmed for Matlab Production Servers.",
+	"icon" : "extension",
+	"type" : "visualization",
+	"version": "1.0",
+    "preview" : "FEI-matlab.png",
+	"author" : "Fady Heiba"
+}

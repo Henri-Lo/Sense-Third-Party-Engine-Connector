@@ -1,0 +1,57 @@
+.qv-object-FEI-FEI-thirdpartyEngineConnector div.qv-object-content-container {
+	overflow: visible;
+}
+.qv-object-FEI-FEI-thirdpartyEngineConnector td,
+.qv-object-FEI-thirdpartyEngineConnector th {
+	border-top: 0px solid #fff;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	cursor: default;
+	font-size: 12px;
+}
+.qv-object-FEI-FEI-thirdpartyEngineConnector td.numeric {
+	text-align: right;
+}
+.qv-object-FEI-thirdpartyEngineConnector button {
+	width: 100%;
+}
+
+.qv-object-FEI-thirdpartyEngineConnector .bar {
+  fill: steelblue;
+}
+
+.qv-object-FEI-thirdpartyEngineConnector .bar:hover {
+  fill: brown;
+}
+
+.qv-object-FEI-thirdpartyEngineConnector .axis {
+  font: 10px sans-serif;
+}
+
+.qv-object-FEI-thirdpartyEngineConnector .axis path,
+.qv-object-FEI-thirdpartyEngineConnector .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-FEI-thirdpartyEngineConnector .x.axis path {
+  display: none;
+}
+
+div.scroll75 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 75%;
+    overflow: scroll;
+}
+div.scroll25 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 25%;
+    overflow: scroll;
+}
