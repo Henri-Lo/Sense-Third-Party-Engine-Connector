@@ -10,15 +10,15 @@ b) The extension pulls the selected raw data from Qlik's in-memory engine
 c) The extension Sends the raw data, to the 3rd party engine for calculation
 d) The output is visualized upon receiving the result back from the 3rd party engine
 
-![alt tag](https://github.com/fadyheiba/FEI-Sense-Third-Party-Engine-Connector/blob/master/FEI-3rd%20Party%20Engine%20Connector/Integration%20Flowchart.png)
+![alt tag](https://github.com/fadyheiba/Sense-Third-Party-Engine-Connector/blob/master/FEI-3rd%20Party%20Engine%20Connector/Integration%20Flowchart.png)
 
 This version of the extension is configured with a Portfolio Optimization (Matlab function), and ARIMA Forecast (R function).
 
 In this Qlik Sense app, the Fund Manager can select a historical period that he believes best resembles today's market conditions, and receives a portfolio allocation based on Matlab calculations, then proceed to compare it to his current positions, all in sub-second responses.
-![alt tag](https://github.com/fadyheiba/FEI-Sense-Third-Party-Engine-Connector/blob/master/FEI-3rd%20Party%20Engine%20Connector/Matlab%20Example.png)
+![alt tag](https://github.com/fadyheiba/Sense-Third-Party-Engine-Connector/blob/master/FEI-3rd%20Party%20Engine%20Connector/Matlab%20Example.png)
 
 The next example uses a Predictive Analytics function in R, the ARIMA Forecast, to predict what the next month's sales will look like based on the past three years.
-![alt tag](https://github.com/fadyheiba/FEI-Sense-Third-Party-Engine-Connector/blob/master/FEI-3rd%20Party%20Engine%20Connector/R%20Example.png)
+![alt tag](https://github.com/fadyheiba/Sense-Third-Party-Engine-Connector/blob/master/FEI-3rd%20Party%20Engine%20Connector/R%20Example.png)
 
 ####For Developers:
 If you're interested in configuring new functions, please refer to the instruction comments at the top of the javascript file.
